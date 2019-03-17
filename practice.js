@@ -71,12 +71,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-function reversedLooper(letters){
-  for (let i=0; i > letters.length;i++){
-    alert(letters[i])
-  }
-};
-
+// function reversedLooper(letters){
+//   for (let i=0; i < letters.length;i--){
+//     alert(letters[i])
+//   }
+// };
+// reversedLooper(letters)
 
 
 ////////// PROBLEM 5 //////////
@@ -93,10 +93,13 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 //Code Here
 
 function eventfinder(nums){
-for (let i=0; i < nums.even;i++){
- alert(nums)
+ let newArray = nums.filter(num => {
+  return num % 2 === 0;
+})
+ return newArray;
 }
-};
+
+eventfinder(nums)
 
 
 
